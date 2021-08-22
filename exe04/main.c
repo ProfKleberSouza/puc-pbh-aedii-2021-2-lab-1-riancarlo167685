@@ -1,6 +1,6 @@
-#include <stdio.h>
+#include <stdio.h> //para stdin e fgets
 #include "functions.h"
-#include <string.h>
+
 int main() {
 
   char texto[50];
@@ -8,7 +8,7 @@ int main() {
   // ENTRADA DE DADOS
   fgets(texto, sizeof(texto), stdin);
   
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
+  //CHAMADA PROCEDIMENTO
   numero_vogais(texto);
 
   return(0);
