@@ -1,6 +1,6 @@
 
 #include "functions.h"
-#include <stdio.h>
+
 int menor(int v[], int n){
   int i;
   int menor = v[0];

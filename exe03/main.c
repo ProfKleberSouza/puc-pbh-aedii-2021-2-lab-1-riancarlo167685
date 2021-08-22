@@ -1,18 +1,21 @@
 #include <stdio.h>
 #include "functions.h"
 
+#define tamanho 6
 int main() {
 
-    int a, b, s;
+  int a[tamanho], menor, maior;
   
   // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
-
+  for(int i=0;i < tamanho;i++){
+    scanf("%d", &a[i]);
+  }
   // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
+  menor_maior(a, tamanho, &menor, &maior);
 
   // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
+  printf("MENOR = %d\n", menor);
+  printf("MAIOR = %d", maior);
 
   return(0);
 }
